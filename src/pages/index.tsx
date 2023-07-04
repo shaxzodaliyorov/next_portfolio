@@ -1,4 +1,5 @@
 import { About, Hero } from "@/components";
+import { metaIcon } from "@/config/constants";
 import { Navbar } from "@/layouts";
 import Head from "next/head";
 
@@ -22,12 +23,12 @@ export default function Home() {
           property="og:description"
           content="Free programming lessons and projects, exercises to strengthen algorithms. Ready-made templates, personal profile portfolio and resume. Learning JavaScript related technologies. Shaxzod "
         />
-        <meta property="og:image" content="/logo.svg" />
+        <meta property="og:image" content={metaIcon} />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:locale" content="uz_UZ" />
         <meta name="twitter:title" content="Shaxzod | Dasturlash kursi" />
-        <meta name="twitter:image" content="/logo.svg" />
+        <meta name="twitter:image" content={metaIcon} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"
